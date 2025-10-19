@@ -1,0 +1,32 @@
+package com.rahul.springDemo;
+
+public class Alien {
+	
+	private int age;
+	public Laptop getLaptop() {
+		return laptop;
+	}
+
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
+	}
+
+	private Laptop laptop;
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		System.out.println("age assigned");
+		this.age = age;
+	}
+
+	public Alien() {
+		System.out.println("alien object created");
+	}
+	
+	public void code() {
+		System.out.println("coding");
+	}
+}
