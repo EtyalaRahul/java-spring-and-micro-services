@@ -5,12 +5,15 @@
            http://www.springframework.org/schema/beans
            https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Bean definitions -->
-    <bean id="alien" class="com.rahul.springDemo.Alien">
+    <!-- Bean definitions 
+    		 <bean id="com" class="com.rahul.springDemo.Desktop"/>
+    -->
+    <bean id="alien" class="com.rahul.springDemo.Alien" autowire="default">
         <property name="age" value="20"/>
-        <property name="laptop" ref="laptop"/>
+        <property name="com" ref="com"/>
     </bean>
 
-    <bean id="laptop" class="com.rahul.springDemo.Laptop"/>
+    <bean id="com" class="com.rahul.springDemo.Laptop"/>
+   
     
 </beans>

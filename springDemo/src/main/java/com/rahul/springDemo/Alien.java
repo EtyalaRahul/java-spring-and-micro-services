@@ -3,16 +3,18 @@ package com.rahul.springDemo;
 public class Alien {
 	
 	private int age;
-	public Laptop getLaptop() {
-		return laptop;
-	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
-	}
 
-	private Laptop laptop;
+	private Computer com;
 	
+	public Computer getCom() {
+		return com;
+	}
+
+	public void setCom(Computer com) {
+		this.com = com;
+	}
+
 	public int getAge() {
 		return age;
 	}
@@ -28,6 +30,6 @@ public class Alien {
 	
 	public void code() {
 		System.out.println("coding");
-		laptop.compile();
+		com.compile();
 	}
 }
